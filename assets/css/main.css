@@ -1,0 +1,112 @@
+* {
+  /* box-model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* font */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body {
+height: 65vh;
+
+/* flex-box */
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+form {
+  /* box-model */
+  width: 80%;
+  max-width: 500px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  /* tex */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+fieldset {
+  background-color: aliceblue;
+
+  /* flex-box */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+div {
+  padding: .5rem;
+}
+
+span {
+  padding: 1rem;
+  align-self: center;
+}
+
+p {
+  font-size: 16px;
+  color: red;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
+/* buttons */
+.btn, .btn-create {
+  width: 50%;
+  margin: auto;
+  
+}
+
+/* dice icons */
+.icon::before {
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6-sided die */
+.dice::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  font-size: 3rem;
+  content: '\f526';
+}
+
+/* 20-sided die */
+.twenty-dice::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  font-size: 3rem;
+  content: '\f6cf';
+}
+
+/* 12-sided die */
+.twelve-dice::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  font-size: 3rem;
+  content: '\f522';
+}
+
+.output {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: .5rem;
+}
+
+.radio-btn, .choose {
+  margin: auto;
+}

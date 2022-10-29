@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <script src="https://kit.fontawesome.com/50c78812bc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/client.js" defer></script>
+</head>
+<body>
+  <h1>Dice Game</h1>
+  <form action="">
+    <fieldset>
+      <legend><strong>Roll Dice</strong></legend>
+      <div class="choose">
+        <label for="type">Choose dice type:</label>
+        <select name="type" id="type">
+          <option value="t1">6-sided</option>
+          <option value="t2">12-sided</option>
+          <option value="t3">20-sided</option>
+        </select>
+      </div>
+      <div class = "radio-btn">
+        <label for="color">Choose dice color:</label>
+        <div>
+          <input type="radio" name="color" id="color" value="red" required>
+          <label for="color">Red</label>
+        </div>
+        <div>
+          <input type="radio" name="color" id="color" value="green" required>
+          <label for="color">Green</label>
+        </div>
+        <div>
+          <input type="radio" name="color" id="color" value="blue" required>
+          <label for="color">Blue</label>
+        </div>
+        
+        <p>* required</p>
+      </div>
+      <div class="user">
+        <input type="button" value="Create" class="btn-create">
+        <span class = "icon dice"></span>
+        <input type="submit" value="Roll" class="btn">
+      </div>
+      <p class="output"></p>
+    </fieldset>
+  </form>
+</body>
+</html>
